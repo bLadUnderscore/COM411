@@ -2,9 +2,9 @@ import time
 
 #########
 
-genre = input("What type of book is this \n").lower
+genre = input("What type of book is this \n")
 
-if genre == "adventure" :
+if genre == "adventure":
     print("I like adventure books")
 else:
     print("Not really a big fan of that genre")
@@ -18,7 +18,7 @@ print("")
 activity = ""
 
 while activity != "calculate":
-    activity = input("Please enter the activity to be performed \n").lower
+    activity = input("Please enter the activity to be performed \n")
     if activity == "calculate":
         print("Performing activity...")
         time.sleep(5)
@@ -28,9 +28,6 @@ while activity != "calculate":
 
 ##########
 
-robot = ""
-
-while robot != "up" or robot != "down" or robot != "left" or robot != "right":
     robot = input("Towards which direction should i go? \n")
     if robot == "up":
         print("I am moving up!")
@@ -42,3 +39,11 @@ while robot != "up" or robot != "down" or robot != "left" or robot != "right":
         print("I am moving down")
     else:
         print("Please enter a valid direction")
+
+##########
+
+num = int(input("Enter any number to test whether it is odd or even: "))
+if (num % 2) == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
