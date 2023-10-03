@@ -6,7 +6,7 @@ if cover == "soft":
         bound = input("Is the book perfect-bound? Y/N \n").upper()
         if bound == "Y":
             print("Soft cover, perfect bound books are very popular!")
-        if bound == "N":
+        elif bound == "N":
             print("Soft covers with coils or stitches are great for short books")
         else:
             print("Please enter a valid answer")
