@@ -7,3 +7,6 @@ else:
     quit()
 
 print("Finished reading book.")
+print("")
+
+activity = input(" Please enter the activity to be performed")
