@@ -1,19 +1,22 @@
-# Define the directions function
-def directions():
-    # Create a list named 'steps' with the specified items
-    steps = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
-    return steps
+def movements():
+
+    path = ["Move Forward", 10, "Move Backward", 5, "Move Left", 3, "Move Right", 1]
+    return path
+
+def run_task2():
+
+    print("Moving...")
+    path = movements()
+
+    for i in range(0, len(path), 2):
+        direction = path[i]                 # Can also to 'print(f"{path[i]} for {path[i+1} steps")'
+        steps = path[i + 1]
+        print(f"{direction} for {steps} steps")
+
+run_task2()
 
 
-# Define the run_task1 function
-def run_task1():
-    # Call the 'directions' function to get the list of steps
-    steps = directions()
-
-    # Display the list of steps
-    for step in steps:
-        print(step)
 
 
-# Call the 'run_task1' function to execute the program
-run_task1()
+
+
